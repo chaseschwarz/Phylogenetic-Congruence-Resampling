@@ -31,7 +31,7 @@ for (row in 1:1000){
   
   # Helper function to read gff file
   read_gff <- function(name) {
-    gff_file <- paste0('ann_chrom/gff/',name, ".gbk.gff")
+    gff_file <- paste0('DIR/',name, ".gbk.gff")
     gff_f <- read.csv(gff_file, sep = "\t", quote = "", comment.char = "#")
     gff <- setNames(gff_f, c('c1','c2','c3','c4','c5','c6','c7','c8','c9'))
   }
